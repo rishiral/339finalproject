@@ -1,0 +1,380 @@
+#home-pg {
+  background-color: #BD9AFF;
+}
+
+#about-pg {
+  background-color: #B7FFC6;
+}
+
+#game-pg {
+  background-color: #C3EEFF;
+}
+
+#japan-pg {
+  background-color: #FFB9EE;
+}
+
+#art-pg {
+  background-color: #FFFCE1;
+}
+
+.home-grid {
+  /* display: grid;
+  grid-template-rows: 1fr 1fr 2fr; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+main {
+  margin: 10px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.skip {
+  background-color:aqua;
+  color: black;
+  height: 20px;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-120%);
+  transition: transform 0.4s;
+  z-index: 1000;
+}
+
+.skip:focus {
+  transform: translateY(0%);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.curr-page {
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+h1 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 3px;
+	font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  /* letter-spacing: 3px; */
+	font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 3px;
+	font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.card {
+  filter: brightness(60%);
+  width: 400px;
+}
+
+.card-title {
+  font-size: 30px;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.logo-wrapper:focus, #logo:hover, .card-wrapper:focus{
+  filter: drop-shadow(0px  0px 0.5rem black);
+}
+
+ /* Dropdown Button */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  font-size: large;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #FF0073;
+  color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 120px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  text-decoration: underline;
+}
+
+/* Show the dropdown menu*/
+.show {
+  display:block;
+} 
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+.one-by-two-grid-wrapper {
+  background-color: #FF0073;
+  /* border-radius: 30%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  /* margin: auto; */
+  /* grid-row: 2/-1; */
+  padding: 50px;
+}
+
+.one-by-two-grid {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 1000px;
+  gap: 30px;
+  justify-content: center;
+  justify-items: center;
+  /* justify-items: center; */
+  /* background-color: #FF0073; */
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
+  border-radius: 20%;
+  margin: auto;
+}
+
+.one-by-two-grid-item {
+  width: 30%;
+  position: relative;
+  text-align: center;
+}
+
+.one-by-two-grid-item:hover {
+  box-shadow: 0 0 20px black;
+  text-decoration: underline;
+}
+
+.resume {
+  width: 90%;
+  height: 600px;
+}
+
+.bio {
+  margin: 30px;
+  background-color:aliceblue;
+  padding: 20px;
+  border-radius: 10%;
+}
+
+.skills-wrapper {
+  margin: 10px;
+  background-color:#FF0073;
+  padding: 30px;
+  border-radius: 10%;
+  max-width: 1000px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.game-grid, .level-pics-grid, .japan-grid, .art-grid {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  /* justify-content: space-between; */
+}
+
+.level-pics-grid-item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 75%;
+}
+
+.game-grid-item {
+  width: 75%;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -20px;
+  padding: 20px;
+  color: black;
+  background-color:#FF0073;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.prev:hover, .next:hover, .prev:focus, .next:focus {
+  background-color: black;
+  color: white;
+}
+
+.next {
+  right: 0;
+}
+
+#gamereel:hover {
+  box-shadow: 0 0 20px rgba(33,33,33,.2); 
+}
+
+#gamereel {
+  filter: brightness(80%);
+}
+
+.centered {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+  color: white;
+  filter: drop-shadow(2px 1px 0.1rem black);
+}
+
+.centered-img, .game-vid {
+  display: block;
+  margin: 0 auto;
+}
+
+.game-vid {
+  width: 100%;
+  text-align: center;
+}
+
+.static-img {
+  display: none;
+}
+	
+@media (prefers-reduced-motion) {
+  .non-static-media {
+    display: none;
+  }
+
+  .static-img {
+    display: block;
+  }
+
+  .skip {
+    transition: transform 0s;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .one-by-two-grid {
+    flex-direction: row;
+  }
+
+  #logo {
+    width: 15%
+  }
+
+  .one-by-two-grid-item {
+    width: auto;
+  }
+
+  .centered {
+    left: 50%;
+  }
+
+  .resume {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  #logo {
+    width: 10%
+  }
+
+  .game-grid, .level-pics-grid, .japan-grid, .art-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .game-grid-item, .level-pics-grid-item, .game-static-img, .japan-grid-item, .art-grid-item {
+    width: 75%;
+    margin: auto;
+  }
+
+  .game-vid-item {
+    width: 50%;
+  }
+
+  .bakery {
+    width: 45%;
+  }
+}
+

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css" media="screen">
+<script src="js/personal_js.js"></script>
+<title>Rishi | Art</title>
+</head>
+
+<body id="art-pg">
+	<header>
+		<a class="skip" href = "#main">Skip to Main Content</a>
+		<div class="dropdown">
+			<button onclick="displayDropdown()" class="dropbtn">Menu</button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="index.html">Home</a>
+				<a href="personal_aboutme.html">About Me</a>
+				<a href="personal_game.html">Game Development</a>
+				<a href="personal_japan.html">Japan</a>
+				<a href="personal_art.html" class="curr-page">Art</a>
+			</div>
+		</div> 
+		
+		<a href="index.html" class="logo-wrapper"><img id="logo" img src="images/logo.png" alt="logo"></a>
+	</header>
+	<main id="main">
+		<div class="intro">
+			<h1>Art</h1>
+		</div>
+		<img src="images/Art/art_reel_static.png" class="centered-img static-img bakery" alt="Animated bakery shop" width="100%">
+		<video autoplay muted loop class="centered-img non-static-media bakery" width="100%">
+				<source src="clips/art reel/Bakery_Shop_Animated.mp4" type="video/mp4"/>
+		</video>
+		
+		<div class="art-grid">
+			<div class="art-grid-item">
+				<div class="slideshow-container">
+					<img class="slide" src="images/Art/cybertruck_front.png" alt="cybertruck front" width="100%">
+					<img class="slide" src="images/Art/cybertruck_back.png" alt="cybertruck back" width="100%">
+					<button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+					<button class="next" onclick="plusSlides(1)">&#10095;</button>
+				</div>
+			</div>
+			<div class="art-grid-item">
+				<img src="images/Art/shotgun.png" alt="shotgun asset" width="100%">
+			</div>
+			<div class="art-grid-item">
+				<img src="images/Art/pillar.png" alt="pillar asset" width="100%">
+			</div>
+		</div>
+		<div class="art-grid">
+			<div class="art-grid-item">
+				<img src="images/Art/pot.png" alt="flower pot asset" width="100%">
+			</div>
+			<div class="art-grid-item">
+				<img src="images/Art/sofas.png" alt="sofas asset" width="100%">
+			</div>
+			<img src="images/Art/switch_static.png" class="static-img" alt="Animated bakery shop" width="100%">
+			<video autoplay muted loop id="switch" class="non-static-media" width="100%">
+				<source src="clips/art reel/switch_animation.mp4" type="video/mp4" />
+		</video>
+		</div>
+	</main>
+</body>
+	
+</html>
+
+<script>
+	let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides(slideIndex);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex-1].style.display = "block";
+		}
+</script>

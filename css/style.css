@@ -18,6 +18,22 @@
   background-color: #FFFCE1;
 }
 
+.full-size {
+  width: 100%;
+}
+
+.partial-size {
+  width: 80%;
+}
+
+.fifty-size {
+  width: 50%;
+}
+
+.twenty-five-size {
+  width: 25%;
+}
+
 #download-death-tennis {
   color: black;
   font-size: 20px;

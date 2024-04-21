@@ -6,7 +6,6 @@
 <link rel="stylesheet" type="text/css" href="css/html5reset.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/style.css" media="screen">
-<script src="js/personal_js.js"></script>
 <title>Rishi | Game Dev</title>
 </head>
 
@@ -31,17 +30,17 @@
 	  	<h1 >Game Developement</h1>
 	</div>
 	<div class="bio">
-	  <h2>I started learning GameMaker Studio 2 when I was 14 and have been learning Unity since the summer of 2021. Below are some of my projects.</h3>
-	</div>	
+	  <h2>I started learning GameMaker Studio 2 when I was 14 and have been learning Unity since the summer of 2021. Below are some of my projects.</h2>
+	</div>
 		<div class="death-tennis">
 		<h1>Released Fall 2020</h1>
 			<h2>Death Tennis</h2>
 			<h3>Co-creator, Programmer, AI Engineer, Systems Designer, Sound Designer, Trailer Producer</h3>
 			
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/89bZOHjWvJ0" frameborder="0" title="Death Tennis trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/89bZOHjWvJ0" title="Death Tennis trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			<!-- <iframe frameborder="0" src="https://itch.io/embed/791095?link_color=000000&amp;border_color=ffffff" role="none" alt="Death Tennis link" title="Death Tennis link" width="208" height="167"><a href="https://delicateduck.itch.io/death-tennis">Death Tennis by DelicateDuck</a></iframe> -->
 			<!-- <iframe frameborder="0" src="https://itch.io/embed/791095?link_color=ff0a0a&amp;border_color=000000" width="552" height="167"><a href="https://delicateduck.itch.io/death-tennis">Death Tennis by DelicateDuck</a></iframe> -->
-			<a href="https://delicateduck.itch.io/death-tennis"><button id="download-death-tennis">Download on Itch.io</button></a>
+			<button id="download-death-tennis"><a href="https://delicateduck.itch.io/death-tennis">Download on Itch.io</a></button>
 		<div class="game-grid">
 				<div class="game-grid-item">
 					<h4>Mid-Development</h4>
@@ -75,7 +74,7 @@
 		<div class="game-vid">
 			<img src="images/Game_Dev/heart_heist_vid_static.png" class="static-img game-static-img full-size" alt="Heart Heist development footage">
 			<video autoplay muted loop class="game-vid-item non-static-media full-size">
-				<source src="clips/heart_heist_vid.mp4" type="video/mp4"/>
+				<source src="clips/heart_heist_vid.mp4" type="video/mp4">
 			</video>
 		</div>
 			
@@ -83,7 +82,7 @@
 			<div class="level-pics-grid">
 				<img src="images/Game_Dev/bathhouse_early_static.png" class="static-img game-static-img full-size" alt="Bathouse level early development">
 				<video autoplay muted loop class="non-static-media full-size">
-					<source src="clips/bathhouse_early_vid.mp4" type="video/mp4" />
+					<source src="clips/bathhouse_early_vid.mp4" type="video/mp4">
 				</video>
 			</div>
 			<div class="level-pics-grid-item">
@@ -102,7 +101,7 @@
 		<div class="game-vid">
 			<img src="images/Game_Dev/cube-runner-static.png" class="static-img game-static-img full-size" alt ="Gameplay footage of a cube runner">
 			<video autoplay muted loop class="game-vid-item non-static-media partial-size">
-				<source src="clips/cube_runner_vid.mp4" type="video/mp4" />
+				<source src="clips/cube_runner_vid.mp4" type="video/mp4">
 			</video>
 		</div>
 		&nbsp;
@@ -111,7 +110,7 @@
 		<div class="game-vid">
 			<img src="images/Game_Dev/platformer-static.png" class="static-img game-static-img full-size" alt="Gameplay footage of a 2D platformer">
 			<video autoplay muted loop class="game-vid-item non-static-media partial-size">
-				<source src="clips/game_reel/platformer.mp4" type="video/mp4" />
+				<source src="clips/game_reel/platformer.mp4" type="video/mp4">
 			</video>
 		</div>
 		&nbsp;
@@ -124,29 +123,4 @@
 </body>
 </html>
 
-<script>
-	let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            slideIndex += n;
-            showSlides(slideIndex);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            
-            if (n > slides.length) {
-                slideIndex = 1;
-            }
-            if (n < 1) {
-                slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            slides[slideIndex-1].style.display = "block";
-		}
-</script>
+<script src="js/personal_js.js"></script>

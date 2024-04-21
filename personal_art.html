@@ -6,7 +6,6 @@
 <link rel="stylesheet" type="text/css" href="css/html5reset.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/style.css" media="screen">
-<script src="js/personal_js.js"></script>
 <title>Rishi | Art</title>
 </head>
 
@@ -32,7 +31,7 @@
 		</div>
 		<img src="images/Art/art_reel_static.png" class="centered-img static-img bakery full-size" alt="Animated bakery shop">
 		<video autoplay muted loop class="centered-img non-static-media bakery full-size">
-				<source src="clips/art_reel/Bakery_Shop_Animated.mp4" type="video/mp4"/>
+				<source src="clips/art_reel/Bakery_Shop_Animated.mp4" type="video/mp4">
 		</video>
 		
 		<div class="art-grid">
@@ -60,7 +59,7 @@
 			</div>
 			<img src="images/Art/switch_static.png" class="static-img full-size" alt="Animated bakery shop">
 			<video autoplay muted loop id="switch" class="non-static-media full-size">
-				<source src="clips/art_reel/switch_animation.mp4" type="video/mp4" />
+				<source src="clips/art_reel/switch_animation.mp4" type="video/mp4">
 		</video>
 		</div>
 	</main>
@@ -68,29 +67,4 @@
 	
 </html>
 
-<script>
-	let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            slideIndex += n;
-            showSlides(slideIndex);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            
-            if (n > slides.length) {
-                slideIndex = 1;
-            }
-            if (n < 1) {
-                slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            slides[slideIndex-1].style.display = "block";
-		}
-</script>
+<script src="js/personal_js.js"></script>
